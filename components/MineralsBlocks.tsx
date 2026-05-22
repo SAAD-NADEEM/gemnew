@@ -34,7 +34,7 @@ function MineralsBlocks() {
     ]
 
     return (
-        <div className="w-full max-w-360 mx-auto py-20 mb-20 space-y-7">
+        <div className="w-full max-w-360 mx-auto py-20 mb-20 space-y-7 px-5 xl:px-0">
             <h1 className="text-3xl lg:text-5xl font-medium text-center">Featured Minerals</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
                 {data.map((info, i) => (

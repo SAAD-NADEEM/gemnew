@@ -64,20 +64,22 @@ function ProductCard({ gems }: { gems: Gem }) {
       <DrawerTrigger asChild>
         <Card gems={gems} />
       </DrawerTrigger>
-      <DrawerContent>
+      <DrawerContent className="max-w-[600px] mx-auto">
         <DrawerHeader>
           <DrawerTitle>Details</DrawerTitle>
           <DrawerDescription>Contact our dealer</DrawerDescription>
         </DrawerHeader>
-        <div className="w-fit h-screen mx-auto flex flex-col justify-center p-3 xl:p-0">
-          <ProductSlider images={images} />
-          <Separator className='mt-3' />
-          <div className="w-full flex flex-col justify-center">
-            <p className="text-muted-foreground">{gems.category}</p>
-            <h1 className="text-3xl leading-8 font-medium uppercase">{gems.name}</h1>
-            <Button className="mt-5 mb-10 w-full">Contact Us</Button>
+        <ScrollArea className='w-full h-[70vh]'>
+          <div className="w-full mx-auto flex flex-col p-5 pt-0">
+            <ProductSlider images={images} />
+            <Separator className='my-3' />
+            <div className="w-full flex flex-col justify-center">
+              <p className="text-muted-foreground">{gems.category}</p>
+              <h1 className="text-3xl leading-8 font-medium uppercase">{gems.name}</h1>
+              <Button className="mt-5 mb-5 w-full h-10 ">Contact Us</Button>
+            </div>
           </div>
-        </div>
+        </ScrollArea>
       </DrawerContent>
     </Drawer>
   );

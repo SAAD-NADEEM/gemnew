@@ -4,3 +4,5 @@ export interface Gem {
   category: string;
   images: string[]
 }
+
+export interface Images { id: number, src: string, alt: string }

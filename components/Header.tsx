@@ -4,6 +4,17 @@ import { Menu, Search } from "lucide-react";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 
+function LOGO() {
+    return (
+        <Link href={'/'}>
+            <div className="relative block w-28 h-12">
+                <Image src={'/logo3.png'} alt="Jilani logo" fill className="object-fill" />
+            </div>
+        </Link>
+    )
+}
+
+
 function LI({ children }: { children: string }) {
     return (
         <li className="text-lg font-light">{children}</li>
@@ -11,41 +22,41 @@ function LI({ children }: { children: string }) {
 }
 
 function Nav() {
+    const links = [
+        { label: "Gems", url: "/" },
+        { label: "Minerals", url: "/minerals" },
+        { label: "Others", url: "#" },
+        { label: "Contact Us", url: "#" },
+        { label: "About Us", url: "#" },
+    ];
 
     return (
         <nav className="mr-20">
             <ul className="flex gap-3">
-                <Link href={'#'}>
-                    <LI>Collection</LI>
-                </Link>
-                <p className="text-lg">-</p>
-                <Link href={'#'}>
-                    <LI>Store</LI>
-                </Link>
-                <p className="text-lg">-</p>
-                <Link href={'#'}>
-                    <LI>Contact Us</LI>
-                </Link>
-                <p className="text-lg">-</p>
-                <Link href={'#'}>
-                    <LI>About Us</LI>
-                </Link>
+                {links.flatMap((item, i) => [
+                    <Link key={i} href={item.url}>
+                        <LI>{item.label}</LI>
+                    </Link>,
+                    i < links.length - 1 && (
+                        <p key={`sep-${i}`} className="text-lg">-</p>
+                    ),
+                ])}
             </ul>
         </nav>
-    )
+    );
 }
 
 function MobileMode() {
     return (
-        <div className="max-w-360 mx-auto py-3 md:hidden block">
-            <div className="flex justify-between items-center">
-                <MobileNav />
-                <div className="relative block w-18 h-8">
-                    <Image src={'/logo2.png'} alt="Jilani logo" fill className="object-fill" />
+        <div className="max-w-360 mx-auto py-3 md:hidden block bg-background/20 backdrop-blur-md">
+            <div className="grid grid-cols-3 items-center">
+                <div></div> {/* empty spacer for left side */}
+                <div className="relative w-18 justify-self-center mr-8">
+                    <LOGO />
                 </div>
-                <Button variant='ghost'>
-                    <Search className="size-5 stroke-1" />
-                </Button>
+                <div className="justify-self-end">
+                    <MobileNav />
+                </div>
             </div>
         </div>
     )
@@ -53,21 +64,16 @@ function MobileMode() {
 
 function Header() {
     return (
-        <header className="border-border border-b">
-            <div className="bg-foreground h-6 flex items-center justify-center">
-                <p className="text-background text-[8px] font-extralight">100% Natural & Untreated Stones • Request a private consultation</p>
+        <header className="border-border md:hidden sticky top-0 z-50">
+            <div className="bg-foreground h-8 flex items-center justify-center">
+                <p className="text-background text-sm font-extralight">Jilani International</p>
             </div>
-            <div className="max-w-360 mx-auto py-3 md:px-3 xl:px-0 hidden md:block">
+            {/* <div className="max-w-360 mx-auto py-3 md:px-3 xl:px-0 hidden md:block">
                 <div className="flex justify-between items-center">
-                    <div className="relative block w-28 h-12">
-                        <Image src={'/logo2.png'} alt="Jilani logo" fill className="object-fill" />
-                    </div>
+                    <LOGO />
                     <Nav />
-                    <Button variant='ghost'>
-                        <Search className="size-5 stroke-1" />
-                    </Button>
                 </div>
-            </div>
+            </div> */}
             <MobileMode />
         </header>
     );

@@ -11,8 +11,9 @@ import {
 } from "./ui/sheet";
 
 const navLinks = [
-  { label: "Collection", href: "#" },
-  { label: "Store", href: "#" },
+  { label: "Gems", href: "/" },
+  { label: "Minerals", href: "/minerals" },
+  { label: "Others", href: "#" },
   { label: "Contact Us", href: "#" },
   { label: "About Us", href: "#" },
 ];

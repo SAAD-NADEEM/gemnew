@@ -26,7 +26,7 @@ function ProductSlider({ images }: { images: string[] }) {
   }
 
   return (
-    <div className="flex flex-col justify-between w-full md:w-[600px] h-[440px] gap-3 overflow-hidden">
+    <div className="flex flex-col justify-between w-full h-[440px] gap-3 overflow-hidden">
       <div className="md:max-h-[340px]">
         <Carousel
           setApi={setApi}
@@ -46,7 +46,7 @@ function ProductSlider({ images }: { images: string[] }) {
                     alt={image}
                     width={200}
                     height={200}
-                    className="h-full w-full"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               </CarouselItem>

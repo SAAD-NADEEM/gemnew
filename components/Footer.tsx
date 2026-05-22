@@ -2,17 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gemCategories = [
-  { name: "Sapphires", href: "#" },
-  { name: "Rubies", href: "#" },
-  { name: "Emeralds", href: "#" },
-  { name: "Aquamarines", href: "#" },
-  { name: "Garnets", href: "#" },
-  { name: "Spinels", href: "#" },
+  { name: "Gems", href: "/" },
+  { name: "Minerals", href: "/Minerals" },
+  { name: "Others", href: "#" },
 ];
 
 const companyLinks = [
   { name: "About Us", href: "#" },
-  { name: "How It Works", href: "#" },
+  { name: "Contact Us", href: "#" },
 ];
 
 const supportLinks = [
@@ -58,7 +55,7 @@ function Footer() {
           <div className="lg:col-span-2 flex flex-col gap-5">
             <div className="relative w-28 h-12">
               <Image
-                src="/logo2.png"
+                src="/logo3.png"
                 alt="Jilani logo"
                 fill
                 className="object-fill"
