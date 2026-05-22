@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
+import MobileNav from "./MobileNav"; // 1. Imported MobileNav
 
 function LOGO() {
     return (
@@ -29,17 +30,21 @@ function Header() {
                 <LOGO />
             </div>
 
-            {/* 2. Nav is pulled out so it shares a parent with your main page content. 
-             Added `md:hidden` so it hides on desktop like the header does. */}
+            {/* Nav */}
             <nav className="w-full bg-background/20 backdrop-blur-md py-2 md:hidden shadow-sm">
-                <ul className="flex justify-center gap-3">
+                {/* Added items-center to keep the links and the icon vertically aligned */}
+                <ul className="flex items-center justify-center gap-3 relative">
                     {leftLinks.map((label) => (
                         <NavLink key={label.name} href={label.href} label={label.name} />
                     ))}
+                    
+                    {/* 2. Added the MobileNav component here */}
+                    <li className="absolute left-0">
+                        <MobileNav />
+                    </li>
                 </ul>
             </nav>
         </header>
-
     );
 }
 

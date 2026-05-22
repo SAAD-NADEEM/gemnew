@@ -11,38 +11,11 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import { ScrollArea } from "./ui/scroll-area";
-import ProductSlider from "./ProductSlider";
 import { Separator } from "./ui/separator";
 import Stack from "./Stack";
+import Card from "./Card";
 
-function Card({ gems }: { gems: Gem }) {
-  return (
-    <div className="relative shadow-2xs rounded-md overflow-hidden cursor-pointer">
-      <div className="relative aspect-square overflow-hidden bg-muted">
-        <Image
-          src={gems.image}
-          alt={gems.name}
-          fill
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-foreground/30 flex flex-col justify-end">
-          <div className="p-4">
-            <h3 className="text-background text-2xl leading-6 font-medium tracking-tighter text-shadow-2xs">{gems.name}</h3>
-            <p className="text-sm text-muted font-medium text-shadow-2xs">{gems.category}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 function SmallCarousel({ images }: { images: string[] }) {
   return (
@@ -62,8 +35,10 @@ function ProductCard({ gems }: { gems: Gem }) {
 
   return (
     <Drawer>
-      <DrawerTrigger asChild>
-        <Card gems={gems} />
+      <DrawerTrigger >
+        <div className="w-full h-full cursor-pointer">
+          <Card gems={gems} />
+        </div>
       </DrawerTrigger>
       <DrawerContent className="max-w-[600px] md:mx-auto mx-2 bg-transparent backdrop-blur-lg border border-border border-b-0 shadow-2xs">
         <DrawerHeader>

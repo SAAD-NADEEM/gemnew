@@ -13,7 +13,7 @@ const leftLinks = [
 
 const rightLinks = [
     { name: "Contact Us", href: "#" },
-    { name: "About Us", href: "#" }
+    { name: "About Us", href: "/about" }
 ];
 
 

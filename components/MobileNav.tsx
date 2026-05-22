@@ -11,11 +11,8 @@ import {
 } from "./ui/sheet";
 
 const navLinks = [
-  { label: "Gems", href: "/" },
-  { label: "Minerals", href: "/minerals" },
-  { label: "Others", href: "#" },
   { label: "Contact Us", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "About Us", href: "/about" },
 ];
 
 function MobileNav() {
