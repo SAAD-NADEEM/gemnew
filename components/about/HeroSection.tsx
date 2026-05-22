@@ -1,18 +1,24 @@
-import WhatsAppButton from "@/components/ui/whatsapp-button";
+import Image from "next/image";
 
-export default function HeroSection() {
+export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-24 md:py-32">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-          About Jilani Gems & Minerals
+    <section className="max-w-7xl mx-auto px-6 md:px-16 pt-[140px]">
+      <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+        <h1 className="font-serif text-5xl md:text-[64px] leading-[1.1] tracking-tight font-bold text-primary mb-6">
+          A Trusted Name in Natural Gemstones
         </h1>
-        <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-8">
-          Where Nature’s Beauty Meets Trust and Excellence
+        <p className="text-lg leading-relaxed text-muted-foreground">
+          Welcome to Jilani Gems and Minerals by Jilani International. We are passionate about bringing the beauty and authenticity of nature to collectors, jewelers, wholesalers, and gemstone enthusiasts worldwide
         </p>
-        <WhatsAppButton message="Hello%20Jilani%20Gems!%20I%27d%20like%20to%20learn%20more%20about%20your%20business.">
-          Connect with us on WhatsApp
-        </WhatsAppButton>
+      </div>
+      <div className="w-full h-[600px] relative overflow-hidden rounded bg-muted border border-border/30 flex items-center justify-center">
+        <Image
+          src={'/about1.png'}
+          alt="Gem cutting atelier"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
     </section>
   );

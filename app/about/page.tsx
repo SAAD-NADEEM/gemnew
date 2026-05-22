@@ -1,14 +1,15 @@
-import HeroSection from "@/components/about/HeroSection";
-import AboutContent from "@/components/about/AboutContent";
-import CTASection from "@/components/about/CTASection";
-import Footer from "@/components/about/Footer";
+import { HeroSection } from "@/components/about/HeroSection";
+import { OurHeritage } from "@/components/about/OurHeritage";
+import { EthicalProvenance } from "@/components/about/EthicalProvenance";
+import { TheArtisans } from "@/components/about/TheArtisans";
 
 export default function AboutPage() {
   return (
-    <main className="max-w-[1440px] mx-auto my-20">
+    <main className="min-h-screen bg-background">
       <HeroSection />
-      <AboutContent />
-      <CTASection />
+      <OurHeritage />
+      <EthicalProvenance />
+      <TheArtisans />
     </main>
   );
 }
