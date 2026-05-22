@@ -2,6 +2,7 @@ import GemsListing from "@/components/GemsListing";
 import BuyerConfidenceFAQ from "@/components/BuyerConfidenceFAQ";
 import HeroBanner from "@/components/HeroBanner";
 import MainBanner from "@/components/MainBanner";
+import MasonryGrid from "@/components/MasonryGrid";
 
 function page() {
 
@@ -16,7 +17,7 @@ function page() {
       <MainBanner data={data} />
       <GemsListing />
       <HeroBanner />
-      <BuyerConfidenceFAQ />
+      <MasonryGrid />
     </main>
   );
 }
