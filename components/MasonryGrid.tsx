@@ -15,30 +15,19 @@ const images = [
  
 export default function MasonryGrid() {
   return (
-    <main className="min-h-screen bg-background px-4 py-8">
-      <h1 className="text-3xl font-bold text-foreground text-center mb-8">
-        My Board
-      </h1>
- 
-      {/* Pinterest-style masonry using CSS columns */}
-      <div className="columns-2 sm:columns-3 lg:columns-4 xl:columns-5 gap-3">
-        {images.map((img) => (
-          <div
-            key={img.id}
-            className="break-inside-avoid mb-3 rounded-2xl overflow-hidden
-                       bg-card shadow-sm hover:shadow-lg
-                       transition-shadow duration-300 cursor-pointer group"
-          >
+    <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+      {images.map((img, index) => (
+        <div key={index} className="break-inside-avoid">
+          <div className="bg-card rounded-lg border border-border shadow-sm overflow-hidden">
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full h-auto block
-                         group-hover:scale-105 transition-transform duration-300"
+              className="w-full object-cover"
               loading="lazy"
             />
           </div>
-        ))}
-      </div>
-    </main>
+        </div>
+      ))}
+    </div>
   );
 }
