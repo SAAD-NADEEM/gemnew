@@ -3,6 +3,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import NavLink from "./NavLink";
 
 const leftLinks = [
     { name: "Gems", href: "/" },
@@ -15,20 +16,7 @@ const rightLinks = [
     { name: "About Us", href: "#" }
 ];
 
-function NavLink({ href, label }: { href: string; label: string }) {
-    return (
-        <Link
-            href={href}
-            className="
-        text-sm tracking-widest uppercase font-light
-        text-foreground/60 hover:text-foreground
-        transition-colors duration-200
-      "
-        >
-            {label}
-        </Link>
-    );
-}
+
 
 export default function NewHeader() {
     const { scrollY } = useScroll();

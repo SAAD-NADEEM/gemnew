@@ -21,6 +21,7 @@ import {
 import { ScrollArea } from "./ui/scroll-area";
 import ProductSlider from "./ProductSlider";
 import { Separator } from "./ui/separator";
+import Stack from "./Stack";
 
 function Card({ gems }: { gems: Gem }) {
   return (
@@ -64,14 +65,32 @@ function ProductCard({ gems }: { gems: Gem }) {
       <DrawerTrigger asChild>
         <Card gems={gems} />
       </DrawerTrigger>
-      <DrawerContent className="max-w-[600px] mx-auto">
+      <DrawerContent className="max-w-[600px] md:mx-auto mx-2 bg-transparent backdrop-blur-lg border border-border border-b-0 shadow-2xs">
         <DrawerHeader>
           <DrawerTitle>Details</DrawerTitle>
-          <DrawerDescription>Contact our dealer</DrawerDescription>
+          <DrawerDescription className="text-background">Contact our dealer</DrawerDescription>
         </DrawerHeader>
-        <ScrollArea className='w-full h-[70vh]'>
+        <ScrollArea className='w-full h-[70vh] [&_[data-radix-scroll-area-scrollbar]]:hidden'>
           <div className="w-full mx-auto flex flex-col p-5 pt-0">
-            <ProductSlider images={images} />
+            {/* <ProductSlider images={images} /> */}
+            <div className="w-full max-w-[350px] aspect-square mx-auto">
+              <Stack
+                randomRotation={false}
+                sensitivity={200}
+                sendToBackOnClick={true}
+                cards={images.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt={`card-${i + 1}`}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                ))}
+                autoplay={false}
+                autoplayDelay={3000}
+                pauseOnHover={false}
+              />
+            </div>
             <Separator className='my-3' />
             <div className="w-full flex flex-col justify-center">
               <p className="text-muted-foreground">{gems.category}</p>

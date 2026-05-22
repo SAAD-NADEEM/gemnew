@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { useState } from "react";
+import { ScrollArea } from "./ui/scroll-area";
 
 function ProductSlider({ images }: { images: string[] }) {
   const [api, setApi] = useState<CarouselApi>();
@@ -20,13 +21,13 @@ function ProductSlider({ images }: { images: string[] }) {
       return;
     }
 
-    
+
     console.log("index is: ", index);
     api.scrollTo(index);
   }
 
   return (
-    <div className="flex flex-col justify-between w-full h-[440px] gap-3 overflow-hidden">
+    <div className="flex flex-col justify-between w-full max-h-[440px] gap-3 overflow-hidden">
       <div className="md:max-h-[340px]">
         <Carousel
           setApi={setApi}
@@ -57,20 +58,28 @@ function ProductSlider({ images }: { images: string[] }) {
         </Carousel>
       </div>
 
-      <div className="flex gap-3">
-        {images.map((img, i) => (
-          <button key={i} onClick={() => handleClick(i)}>
-            <Image
-              src={img}
-              alt={""}
-              width={100}
-              height={100}
-              className="rounded-md border-1 aspect-square border-main-primary"
-            />
-          </button>
-        ))}
-      </div>
-    </div>
+      <Carousel className="w-full" opts={{
+        align: "start"
+      }}>
+        <CarouselContent className="-ml-3">
+          {images.map((img, i) => (
+            <CarouselItem key={i} className="pl-3 basis-1/4">
+              <button onClick={() => handleClick(i)} className="w-full">
+                <Image
+                  src={img}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="rounded-md border aspect-square border-main-primary w-full object-cover"
+                />
+              </button>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+    </div >
   );
 }
 
