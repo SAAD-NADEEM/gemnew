@@ -69,7 +69,7 @@ function ProductCard({ gems }: { gems: Gem }) {
           <DrawerTitle>Details</DrawerTitle>
           <DrawerDescription>Contact our dealer</DrawerDescription>
         </DrawerHeader>
-        <div className="w-fit h-screen mx-auto flex flex-col justify-center">
+        <div className="w-fit h-screen mx-auto flex flex-col justify-center p-3 xl:p-0">
           <ProductSlider images={images} />
           <Separator className='mt-3' />
           <div className="w-full flex flex-col justify-center">

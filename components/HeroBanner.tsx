@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function HeroBanner() {
   return (
-    <div className="relative w-full min-h-[600px] flex flex-col md:flex-row bg-background">
+    <div className="relative w-full min-h-[600px] flex flex-col md:flex-row bg-background border-t-1 border-b-1 border-border shadow-2xs">
       <div className="w-full md:w-1/2 flex flex-col justify-center p-8 md:p-16">
         <h1 className="text-primary text-4xl md:text-5xl font-bold mb-6">The King of Gems</h1>
         <p className="text-justify mb-4 text-muted-foreground">The July birthstone, Ruby, is the red variety of corundum, coloured by trace amounts of chromium. Its name derives from 'ruber', Latin for red. The most prized colour is a vivid, medium-dark toned red known as "pigeon's blood."</p>

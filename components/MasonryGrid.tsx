@@ -1,33 +1,43 @@
 const images = [
-  { id: 1,  src: "https://picsum.photos/seed/a1/400/600", alt: "Photo 1" },
-  { id: 2,  src: "https://picsum.photos/seed/b2/400/300", alt: "Photo 2" },
-  { id: 3,  src: "https://picsum.photos/seed/c3/400/500", alt: "Photo 3" },
-  { id: 4,  src: "https://picsum.photos/seed/d4/400/700", alt: "Photo 4" },
-  { id: 5,  src: "https://picsum.photos/seed/e5/400/400", alt: "Photo 5" },
-  { id: 6,  src: "https://picsum.photos/seed/f6/400/550", alt: "Photo 6" },
-  { id: 7,  src: "https://picsum.photos/seed/g7/400/350", alt: "Photo 7" },
-  { id: 8,  src: "https://picsum.photos/seed/h8/400/650", alt: "Photo 8" },
-  { id: 9,  src: "https://picsum.photos/seed/i9/400/450", alt: "Photo 9" },
-  { id: 10, src: "https://picsum.photos/seed/j10/400/500", alt: "Photo 10" },
-  { id: 11, src: "https://picsum.photos/seed/k11/400/300", alt: "Photo 11" },
-  { id: 12, src: "https://picsum.photos/seed/l12/400/600", alt: "Photo 12" },
+  { id: 1, src: "/gems/emerald01.png", alt: "Emerald 01" },
+  { id: 2, src: "/gems/emerald02.jpeg", alt: "Emerald 02" },
+  { id: 3, src: "/gems/emerald03.jpeg", alt: "Emerald 03" },
+  { id: 4, src: "/gems/emerald04.jpeg", alt: "Emerald 04" },
+  { id: 5, src: "/gems/emerald05.jpeg", alt: "Emerald 05" },
+  { id: 6, src: "/gems/emerald06.jpeg", alt: "Emerald 06" },
+  { id: 7, src: "/gems/emerald07.jpeg", alt: "Emerald 07" },
+  { id: 8, src: "/gems/emeraldbox01.png", alt: "Emerald Box 01" },
+  { id: 9, src: "/gems/emeraldbox02.png", alt: "Emerald Box 02" },
+  { id: 10, src: "/gems/ruby01.png", alt: "Ruby 01" },
+  { id: 11, src: "/gems/ruby0102.png", alt: "Ruby 0102" },
+  { id: 12, src: "/gems/ruby02.jpeg", alt: "Ruby 02" },
+  { id: 13, src: "/gems/ruby0202.jpeg", alt: "Ruby 0202" },
+  { id: 14, src: "/gems/ruby0203.jpeg", alt: "Ruby 0203" },
+  { id: 15, src: "/gems/ruby0204.jpeg", alt: "Ruby 0204" },
+  { id: 16, src: "/gems/ruby0205.jpeg", alt: "Ruby 0205" },
+  { id: 17, src: "/gems/ruby03.jpeg", alt: "Ruby 03" },
+  { id: 18, src: "/gems/ruby0302.jpeg", alt: "Ruby 0302" },
+  { id: 19, src: "/gems/ruby0303.jpeg", alt: "Ruby 0303" },
+  { id: 20, src: "/gems/ruby0304.jpeg", alt: "Ruby 0304" },
+  { id: 21, src: "/gems/saphhire01.jpeg", alt: "Saphhire 01" },
 ];
- 
+
 export default function MasonryGrid() {
   return (
-    <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-      {images.map((img, index) => (
-        <div key={index} className="break-inside-avoid">
-          <div className="bg-card rounded-lg border border-border shadow-sm overflow-hidden">
+    <div className="w-full max-w-360 my-20 mx-auto flex flex-col gap-5">
+      <h1 className="text-center text-4xl font-medium">Gallery</h1>
+      <div className="px-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {images.map((img, index) => (
+          <div key={index} className="aspect-square bg-card rounded-lg border border-border overflow-hidden shadow-sm">
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full object-cover"
+              className="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
