@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Uncut Ruby Cluster",
+        "image": "/gems/ruby01.png",
+        "category": "gems",
+        "images": [
+            "/gems/ruby01.png",
+            "/gems/ruby0102.png"
+        ]
+    },
+    {
+        "name": "Gem-Grade Ruby",
+        "image": "/gems/ruby03.jpeg",
+        "category": "gems",
+        "images": [
+            "/gems/ruby03.jpeg",
+            "/gems/ruby0302.jpeg",
+            "/gems/ruby0303.jpeg",
+            "/gems/ruby03.jpeg",
+            "/gems/ruby0304.jpeg"
+        ]
+    },
+    {
+        "name": "Raw Ruby Mixed",
+        "image": "/gems/ruby02.jpeg",
+        "category": "gems",
+        "images": [
+            "/gems/ruby02.jpeg",
+            "/gems/ruby0202.jpeg",
+            "/gems/ruby0203.jpeg",
+            "/gems/ruby0204.jpeg"
+        ]
+    },
+    {
+        "name": "Sapphire Crystals Rough",
+        "image": "/gems/saphhire01.jpeg",
+        "category": "gems",
+        "images": [
+            "/gems/saphhire01.jpeg"
+        ]
+    },
+    {
+        "name": "Emerald Crystals | Rough",
+        "image": "/gems/emerald01.png",
+        "category": "gems",
+        "images": [
+            "/gems/emerald01.png",
+            "/gems/emerald02.jpeg",
+            "/gems/emerald03.jpeg",
+            "/gems/emerald04.jpeg",
+            "/gems/emerald05.jpeg",
+            "/gems/emerald06.jpeg",
+            "/gems/emerald07.jpeg"
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Graphite Ore",
+        "image": "/minerals/IMG-20251025-WA0369.jpeg",
+        "category": "minerals"
+    },
+    {
+        "name": "Precious Group Metal | Ingot",
+        "image": "/minerals/IMG-20251105-WA0778.jpg.jpeg",
+        "category": "minerals"
+    },
+    {
+        "name": "Gold Ore",
+        "image": "/minerals/IMG-20251128-WA0389.jpg.jpeg",
+        "category": "minerals"
+    },
+    {
+        "name": "Tungsten Ore",
+        "image": "/minerals/IMG-20260407-WA0759.jpg.jpeg",
+        "category": "minerals"
+    },
+    {
+        "name": "Copper Ore",
+        "image": "/minerals/IMG-20260430-WA0176.jpg.jpeg",
+        "category": "minerals"
+    },
+    {
+        "name": "Rock Phosphate",
+        "image": "/minerals/IMG-20260426-WA0440.jpg.jpeg",
+        "category": "minerals"
+    },
+    {
+        "name": "Iridium Ore",
+        "image": "/minerals/20260509_171103.jpg.jpeg",
+        "category": "minerals"
+    },
+    {
+        "name": "Rhodium Ore",
+        "image": "/minerals/20260509_171144.jpg.jpeg",
+        "category": "minerals"
+    }
+]
