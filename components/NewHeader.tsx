@@ -12,7 +12,7 @@ const leftLinks = [
 ];
 
 const rightLinks = [
-    { name: "Contact Us", href: "#" },
+    { name: "Contact Us", href: "/contact" },
     { name: "About Us", href: "/about" }
 ];
 
@@ -37,7 +37,10 @@ export default function NewHeader() {
     const smallLogoOpacity = useTransform(scrollY, [60, 180], [0, 1]);
 
     return (
-        <header className="sticky top-0 z-50 bg-background border-b border-border hidden md:block">
+        <>
+            {/* Placeholder to prevent layout shift since the header is now fixed instead of sticky */}
+            <div className="h-[184px] hidden md:block" />
+            <header className="fixed top-0 w-full z-50 bg-background border-b border-border hidden md:block">
             <div className="bg-foreground h-8 flex items-center justify-center">
                 <p className="text-background text-sm font-extralight">Jilani International</p>
             </div>
@@ -81,5 +84,6 @@ export default function NewHeader() {
 
             </div>
         </header>
+        </>
     );
 }

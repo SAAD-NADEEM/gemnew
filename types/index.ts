@@ -1,8 +1,8 @@
 export interface Gem {
   name: string;
-  image: string;
   category: string;
-  images: string[]
+  images: string[];
+  video?: string;
 }
 
 export interface Images { id: number, src: string, alt: string }

@@ -1,11 +1,22 @@
 import { Gem } from "@/types";
 import ProductCard from "./ProductCard";
-import gemsData from '@/data/gems.json'
+import { client } from '@/sanity/lib/client'
+import { urlFor } from '@/sanity/lib/image'
 
 
-function GemsListing() {
+async function GemsListing() {
 
-    const gems: Gem[] = gemsData
+    const data = await client.fetch(`*[_type == "gem"]{
+        name,
+        category,
+        images,
+        "video": video.asset->url
+    }`)
+
+    const gems: Gem[] = data.map((gem: any) => ({
+        ...gem,
+        images: gem.images?.map((img: any) => urlFor(img).url()) || [],
+    }))
 
     return (
         <div className="bg-muted px-3 xl:px-0">

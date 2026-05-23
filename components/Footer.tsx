@@ -4,11 +4,11 @@ import Link from "next/link";
 const gemCategories = [
   { name: "Gems", href: "/" },
   { name: "Minerals", href: "/Minerals" },
-  { name: "Others", href: "#" },
+  { name: "Others", href: "/other" },
 ];
 
 const companyLinks = [
-  { name: "About Us", href: "#" },
+  { name: "About Us", href: "/about" },
   { name: "Contact Us", href: "#" },
 ];
 
@@ -62,9 +62,8 @@ function Footer() {
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              Curating the world&apos;s finest natural, untreated gemstones.
-              Every stone is GIA/AGL certified and ethically sourced — no
-              middlemen, no compromises.
+              Jilani Gems and Minerals by Jilani International
+              Where Nature’s Beauty Meets Trust and Excellence.
             </p>
             {/* WhatsApp CTA */}
             <a

@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Classic Medallion Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160045.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0009.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0010.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0011.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Pastel Pattern Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160122.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0012.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0013.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Traditional Red Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160604.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0016.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0017.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Floral Border Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_161832.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0014.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0015.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Geometric Kilim Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160643.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0018.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Shaggy Diamond Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/more/IMG-20260516-WA0019.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0020.jpg.jpeg",
+      "/rugs/more/IMG-20260516-WA0021.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Round Jute Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/more/IMG-20260517-WA0002.jpg.jpeg",
+      "/rugs/more/IMG-20260517-WA0003.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Ornate Garden Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160015.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Intricate Geometric Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160438.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Small Prayer Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160628.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Golden Agra Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160825.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Bokhara Design Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_160920.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Abstract Multi-Color Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_161706.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Cream Shag Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_161716.jpg.jpeg"
+    ]
+  },
+  {
+    "name": "Folk Art Design Rug",
+    "category": "rugs",
+    "images": [
+      "/rugs/20260509_162150.jpg.jpeg"
+    ]
+  }
+]

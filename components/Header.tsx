@@ -18,7 +18,7 @@ function Header() {
     const leftLinks = [
         { name: "Gems", href: "/" },
         { name: "Minerals", href: "/minerals" },
-        { name: "Others", href: "#" }
+        { name: "Others", href: "/other" }
     ];
 
     return (
