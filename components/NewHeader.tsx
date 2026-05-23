@@ -8,7 +8,7 @@ import NavLink from "./NavLink";
 const leftLinks = [
     { name: "Gems", href: "/" },
     { name: "Minerals", href: "/minerals" },
-    { name: "Others", href: "#" }
+    { name: "Others", href: "/other" }
 ];
 
 const rightLinks = [

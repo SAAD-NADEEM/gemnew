@@ -9,7 +9,7 @@ const gemCategories = [
 
 const companyLinks = [
   { name: "About Us", href: "/about" },
-  { name: "Contact Us", href: "#" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const supportLinks = [
