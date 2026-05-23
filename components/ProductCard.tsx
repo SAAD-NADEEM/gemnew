@@ -19,6 +19,7 @@ import Stack from "./Stack";
 import Card from "./Card";
 import { useState } from "react";
 import { ImageIcon, Play } from "lucide-react";
+import Link from "next/link";
 
 
 function SmallCarousel({ images }: { images: string[] }) {
@@ -109,7 +110,15 @@ function ProductCard({ gems }: { gems: Gem }) {
             <div className="w-full flex flex-col justify-center">
               <p className="text-muted-foreground">{gems.category}</p>
               <h1 className="text-3xl leading-8 font-medium uppercase">{gems.name}</h1>
-              <Button className="mt-5 mb-5 w-full h-10 ">Contact Us</Button>
+              <Button className="mt-5 mb-5 w-full h-10 ">
+                <Link
+                  href="https://wa.me/923219299828"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Us
+                </Link>
+              </Button>
             </div>
           </div>
         </ScrollArea>
