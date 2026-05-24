@@ -11,7 +11,7 @@ async function GemsListing() {
         category,
         images,
         "video": video.asset->url
-    }`)
+    }`,{},{next: {revalidate: 30}})
 
     const gems: Gem[] = data.map((gem: any) => ({
         ...gem,

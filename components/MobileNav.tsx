@@ -11,7 +11,7 @@ import {
 } from "./ui/sheet";
 
 const navLinks = [
-  { label: "Contact Us", href: "#" },
+  { label: "Contact Us", href: "/contact" },
   { label: "About Us", href: "/about" },
 ];
 

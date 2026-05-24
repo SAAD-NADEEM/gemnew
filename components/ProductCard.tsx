@@ -22,17 +22,6 @@ import { ImageIcon, Play } from "lucide-react";
 import Link from "next/link";
 
 
-function SmallCarousel({ images }: { images: string[] }) {
-  return (
-    <ScrollArea className="h-[300px]">
-      {images.map((image, i) => (
-        <div key={i} className="relative aspect-video flex-1 mb-3">
-          <Image src={image} alt={image} fill className="object-cover" />
-        </div>
-      ))}
-    </ScrollArea>
-  )
-}
 
 function ProductCard({ gems }: { gems: Gem }) {
 

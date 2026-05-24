@@ -6,7 +6,7 @@ function NavLink({ href, label }: { href: string; label: string }) {
             href={href}
             className="
         text-sm tracking-widest uppercase font-light
-        text-foreground/60 hover:text-foreground
+        text-primary hover:text-primary/70
         transition-colors duration-200
       "
         >
