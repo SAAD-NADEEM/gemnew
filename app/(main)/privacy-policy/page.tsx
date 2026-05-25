@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Privacy Policy | Jilani International",
+  description: "Privacy Policy of Jilani International. Learn about how we handle and protect your information.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <div className="bg-background min-h-screen py-20 px-4 md:px-8">

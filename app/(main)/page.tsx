@@ -4,6 +4,14 @@ import HeroBanner from "@/components/HeroBanner";
 import MainBanner from "@/components/MainBanner";
 import MasonryGrid from "@/components/MasonryGrid";
 
+export const metadata = {
+  title: "Jilani International | Premium Gems & Minerals",
+  description: "Wholesale supplier of rare gems and minerals including rubies, emeralds, sapphires, and gold ore from Pakistan.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 function page() {
 
   const data = {
@@ -35,14 +43,36 @@ function page() {
     { id: 20, src: "/gems/ruby0304.jpeg", alt: "Ruby 0304" },
     { id: 21, src: "/gems/saphhire01.jpeg", alt: "Saphhire 01" },
   ];
-  
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Jilani International",
+    "url": "https://www.jilanigemsandminerals.com",
+    "logo": "https://www.jilanigemsandminerals.com/opengraph.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "jilanigemsandminerals@gmail.com",
+      "contactType": "customer service"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "21-KMCHS Block 7-8",
+      "addressLocality": "Karachi",
+      "addressCountry": "PK"
+    }
+  };
 
   return (
     <main className='h-full w-full'>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <MainBanner data={data} />
       <GemsListing />
       <HeroBanner />
-      <MasonryGrid images={images}/>
+      <MasonryGrid images={images} />
     </main>
   );
 }

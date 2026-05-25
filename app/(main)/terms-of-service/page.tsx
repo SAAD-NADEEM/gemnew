@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Terms of Service | Jilani International",
+  description: "Terms of Service and operational guidelines for B2B transactions with Jilani International.",
+  alternates: {
+    canonical: "/terms-of-service",
+  },
+};
+
 export default function TermsOfService() {
   return (
     <div className="bg-background min-h-screen py-20 px-4 md:px-8">

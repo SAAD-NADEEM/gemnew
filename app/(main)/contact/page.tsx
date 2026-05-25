@@ -1,8 +1,13 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Contact Us | Jilani International',
+  description: 'Get in touch with Jilani International for bespoke inquiries, private viewings, or detailed information on our collections.',
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {
@@ -51,9 +56,14 @@ export default function ContactPage() {
               <Mail className="w-6 h-6 mt-1 text-emerald-800 dark:text-emerald-400 shrink-0" strokeWidth={1.5} />
               <div>
                 <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Email</h3>
-                <a href="mailto:Jilaniinternational11@gmail.com" className="text-lg md:text-xl font-light hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors break-all">
-                  Jilaniinternational11@gmail.com
-                </a>
+                <div className='flex flex-col'>
+                  <Link href="mailto:Jilaniinternational11@gmail.com" className="text-lg md:text-xl font-light hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors break-all">
+                    Jilaniinternational11@gmail.com
+                  </Link>
+                  <Link href="mailto:jilanigemsandminerals@gmail.com" className="text-lg md:text-xl font-light hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors break-all">
+                    jilanigemsandminerals@gmail.com
+                  </Link>
+                </div>
               </div>
             </div>
 

@@ -3,6 +3,14 @@ import MasonryGrid from "@/components/MasonryGrid";
 import MineralsBlocks from "@/components/MineralsBlocks";
 import MineralsListing from "@/components/MineralsListing";
 
+export const metadata = {
+  title: "Raw Ores & Minerals | Jilani International",
+  description: "Direct-source precious metals, industrial minerals, and natural roughs for global buyers from Pakistan.",
+  alternates: {
+    canonical: "/minerals",
+  },
+};
+
 function page() {
 
     const data = {
