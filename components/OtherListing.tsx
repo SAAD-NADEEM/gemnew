@@ -15,7 +15,7 @@ async function OtherListing() {
 
     const gems: Gem[] = data.map((gem: any) => ({
         ...gem,
-        images: gem.images?.map((img: any) => urlFor(img).url()) || [],
+        images: gem.images?.map((img: any) => urlFor(img).width(600).format('webp').url()) || [],
     }))
 
     return (
