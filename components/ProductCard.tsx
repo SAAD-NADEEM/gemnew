@@ -78,7 +78,7 @@ function ProductCard({ gems }: { gems: Gem }) {
                   sensitivity={200}
                   sendToBackOnClick={true}
                   cards={images.length > 0 ? images.map((src, i) => (
-                    <img
+                    <Image
                       key={i}
                       src={src}
                       alt={`card-${i + 1}`}

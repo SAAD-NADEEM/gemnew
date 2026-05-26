@@ -31,16 +31,6 @@ export default function ContactPage() {
           </h2>
 
           <div className="flex flex-col gap-8">
-            <div className="flex items-start gap-4">
-              <MapPin className="w-6 h-6 mt-1 text-emerald-800 dark:text-emerald-400 shrink-0" strokeWidth={1.5} />
-              <div>
-                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Location</h3>
-                <p className="text-lg md:text-xl font-light text-foreground leading-relaxed">
-                  21-KMCHS Block 7-8<br />
-                  Karachi, Pakistan
-                </p>
-              </div>
-            </div>
 
             <div className="flex items-start gap-4">
               <Phone className="w-6 h-6 mt-1 text-emerald-800 dark:text-emerald-400 shrink-0" strokeWidth={1.5} />
@@ -64,6 +54,17 @@ export default function ContactPage() {
                     jilanigemsandminerals@gmail.com
                   </Link>
                 </div>
+              </div>
+            </div>
+
+             <div className="flex items-start gap-4">
+              <MapPin className="w-6 h-6 mt-1 text-emerald-800 dark:text-emerald-400 shrink-0" strokeWidth={1.5} />
+              <div>
+                <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Location</h3>
+                <p className="text-lg md:text-xl font-light text-foreground leading-relaxed">
+                  21-KMCHS Block 7-8<br />
+                  Karachi, Pakistan
+                </p>
               </div>
             </div>
 

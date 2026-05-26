@@ -11,12 +11,20 @@ async function OtherListing() {
         "category": category->title,
         images,
         "video": video.asset->url
-    }`,{},{next: {revalidate: 30}})
+    }`, {}, { next: { revalidate: 30 } })
 
-    const gems: Gem[] = data.map((gem: any) => ({
-        ...gem,
-        images: gem.images?.map((img: any) => urlFor(img).width(600).format('webp').url()) || [],
-    }))
+    const categoryOrder: Record<string, number> = { rugs: 0, bags: 1, shoes: 2 }
+
+    const gems: Gem[] = data
+        .map((gem: any) => ({
+            ...gem,
+            images: gem.images?.map((img: any) => urlFor(img).width(600).format('webp').url()) || [],
+        }))
+        .sort((a: any, b: any) => {
+            const aOrder = categoryOrder[a.category?.toLowerCase()] ?? 99
+            const bOrder = categoryOrder[b.category?.toLowerCase()] ?? 99
+            return aOrder - bOrder
+        })
 
     return (
         <div className="bg-muted px-3 xl:px-0">
