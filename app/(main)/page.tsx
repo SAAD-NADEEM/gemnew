@@ -33,6 +33,7 @@ function page() {
     { id: 10, src: "/gems/ruby01.png", alt: "Ruby 01" },
     { id: 11, src: "/gems/ruby0102.png", alt: "Ruby 0102" },
     { id: 12, src: "/gems/ruby02.jpeg", alt: "Ruby 02" },
+    { id: 13, src: "/gems/ruby0206.jpeg", alt: "Ruby 0202" },
     { id: 13, src: "/gems/ruby0202.jpeg", alt: "Ruby 0202" },
     { id: 14, src: "/gems/ruby0203.jpeg", alt: "Ruby 0203" },
     { id: 15, src: "/gems/ruby0204.jpeg", alt: "Ruby 0204" },
