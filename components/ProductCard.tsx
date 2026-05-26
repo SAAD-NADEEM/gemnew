@@ -82,7 +82,8 @@ function ProductCard({ gems }: { gems: Gem }) {
                       key={i}
                       src={src}
                       alt={`card-${i + 1}`}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      fill
+                      className="w-full h-full object-cover"
                     />
                   )) : [
                     <div key="no-image" className="flex items-center justify-center w-full h-full bg-muted text-muted-foreground rounded-xl border border-border">
