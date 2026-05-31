@@ -42,17 +42,17 @@ function MineralsBlocks() {
     {
       image: '/minerals/IMG-20251128-WA0389.jpg.jpeg',
       name: 'Gold Ore',
-      desc: 'Gold ore is often found near quartz veins, iron staining, and sulfide minerals like pyrite and arsenopyrite.'
+      desc: 'Gold ore is often found near quartz veins, iron staining, and sulfide minerals like pyrite and arsenopyrite'
     },
     {
       image: '/minerals/IMG-20260407-WA0759.jpg.jpeg',
       name: 'Tungsten Ore',
-      desc: 'Tungsten ore deposits are predominantly magmatic or hydrothermal in origin and are associated with felsic igneous intrusions.'
+      desc: 'Tungsten ore deposits are predominantly magmatic or hydrothermal in origin and are associated with felsic igneous intrusions'
     },
     {
       image: '/minerals/IMG-20260430-WA0176.jpg.jpeg',
-      name: 'Copper Ore',
-      desc: 'Copper ore is defined as a type of mineral deposit that contains economically valuable copper minerals.'
+      name: 'Beryllium Ore',
+      desc: 'Beryllium ore is primarily extracted from minerals like beryl and bertrandite, which are typically found within granitic pegmatites and certain volcanic rock deposits'
     },
   ]
 
