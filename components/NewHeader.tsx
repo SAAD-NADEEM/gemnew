@@ -40,49 +40,49 @@ export default function NewHeader() {
             {/* Placeholder to prevent layout shift since the header is now fixed instead of sticky */}
             <div className="h-[184px] hidden md:block" />
             <header className="fixed top-0 w-full z-50 bg-background border-b border-border hidden md:block">
-            <div className="bg-foreground h-8 flex items-center justify-center">
-                <p className="text-background text-sm font-extralight">Jilani International</p>
-            </div>
+                <div className="bg-foreground h-8 flex items-center justify-center">
+                    <p className="text-background text-sm font-extralight">Jilani International</p>
+                </div>
 
-            {/* ── ROW 1 — big logo only ─────────────────────────── */}
-            <motion.div
-                style={{ height: logoRowHeight, opacity: logoRowOpacity }}
-                className="overflow-hidden flex items-center justify-center"
-            >
-                <motion.div style={{ width: bigLogoWidth, height: bigLogoHeight }} className="relative">
-                    <Image src="/logo3.png" alt="Jilani" fill className="object-contain" priority />
-                </motion.div>
-            </motion.div>
-
-            {/* ── ROW 2 — nav + small logo slides in ──────────────── */}
-            <div className="max-w-screen-xl mx-auto px-8 h-14 flex items-center justify-between">
-
-                {/* Left nav */}
-                <nav className="flex items-center gap-6">
-                    {leftLinks.map((label) => (
-                        <NavLink key={label.name} href={label.href} label={label.name} />
-                    ))}
-                </nav>
-
-                {/* Centre logo — grows in as row 1 disappears */}
+                {/* ── ROW 1 — big logo only ─────────────────────────── */}
                 <motion.div
-                    style={{ scale: smallLogoScale, opacity: smallLogoOpacity }}
-                    className="absolute left-1/2 -translate-x-1/2"
+                    style={{ height: logoRowHeight, opacity: logoRowOpacity }}
+                    className="overflow-hidden flex items-center justify-center"
                 >
-                    <div className="relative w-28 h-10">
-                        <Image src="/logo3.png" alt="Jilani" fill className="object-contain" priority />
-                    </div>
+                    <motion.div style={{ width: bigLogoWidth, height: bigLogoHeight }} className="relative">
+                        <Image src="/logo3.png" alt="jilanigemsandminerals logo" fill className="object-contain" priority />
+                    </motion.div>
                 </motion.div>
 
-                {/* Right nav */}
-                <nav className="flex items-center gap-6">
-                    {rightLinks.map((label) => (
-                        <NavLink key={label.name} href={label.href} label={label.name} />
-                    ))}
-                </nav>
+                {/* ── ROW 2 — nav + small logo slides in ──────────────── */}
+                <div className="max-w-screen-xl mx-auto px-8 h-14 flex items-center justify-between">
 
-            </div>
-        </header>
+                    {/* Left nav */}
+                    <nav className="flex items-center gap-6">
+                        {leftLinks.map((label) => (
+                            <NavLink key={label.name} href={label.href} label={label.name} />
+                        ))}
+                    </nav>
+
+                    {/* Centre logo — grows in as row 1 disappears */}
+                    <motion.div
+                        style={{ scale: smallLogoScale, opacity: smallLogoOpacity }}
+                        className="absolute left-1/2 -translate-x-1/2"
+                    >
+                        <div className="relative w-28 h-10">
+                            <Image src="/logo3.png" alt="jilanigemsandminerals logo" fill className="object-contain" priority />
+                        </div>
+                    </motion.div>
+
+                    {/* Right nav */}
+                    <nav className="flex items-center gap-6">
+                        {rightLinks.map((label) => (
+                            <NavLink key={label.name} href={label.href} label={label.name} />
+                        ))}
+                    </nav>
+
+                </div>
+            </header>
         </>
     );
 }

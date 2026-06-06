@@ -81,7 +81,7 @@ function ProductCard({ gems }: { gems: Gem }) {
                     <Image
                       key={i}
                       src={src}
-                      alt={`card-${i + 1}`}
+                      alt={`${gems.name} image ${i + 1}`}
                       fill
                       className="w-full h-full object-cover"
                     />
