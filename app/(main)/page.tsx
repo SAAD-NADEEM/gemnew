@@ -17,7 +17,7 @@ function page() {
   const data = {
     image: '/emerald_banner.png',
     title: 'Earth’s Rarest Elements',
-    p: 'Unprocessed precious metals, raw minerals, and naturally formed gemstones'
+    p: 'Jilani International (also known as Jilani Gems & Minerals) operates as a direct seller of rare gems, raw minerals, and precious metal ores'
   }
 
   const images = [
